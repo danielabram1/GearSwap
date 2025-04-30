@@ -19,7 +19,7 @@
         description: (string-utf8 200),
         category: (string-utf8 15),
         condition: (string-utf8 15),
-        status: (string-utf8 10),
+        status: (string-utf8 15),
         max-loan-days: uint
     }
 )
@@ -49,7 +49,7 @@
         )
         (and 
             (>= text-length min-length)
-            (&lt;= text-length max-length)
+            (<= text-length max-length)
         )
     )
 )
